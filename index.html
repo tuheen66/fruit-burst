@@ -7,6 +7,12 @@
     <link rel="shortcut icon" href="./images" type="image/x-icon" />
 
     <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- font-awesome 6.4.0 -->
 
@@ -44,16 +50,54 @@
     </script>
     <!-- style tag -->
     <style>
-      .font-garamond {
-        font-family: "EB Garamond", serif;
-      }
-      .font-poppins {
-        font-family: "Poppins", sans-serif;
+      .font-lato {
+        font-family: "Lato", sans-serif;
       }
     </style>
 
     <!-- main css -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body class="font-lato">
+    <header class="max-w-6xl mx-auto">
+      <nav
+        class="hidden lg:flex md:flex flex-col lg:flex-row justify-between bg-[#F85559] items-center text-white p-4 rounded-full"
+      >
+        <!-- menu -->
+        <div class="flex justify-between list-none ml-4">
+          <li class="mr-4"><a href="">Home</a></li>
+          <li class="mr-4"><a href="">About Us</a></li>
+          <li class="mr-4"><a href="">Shop</a></li>
+          <li class="mr-4"><a href="">All Fruits</a></li>
+        </div>
+
+        <!-- logo -->
+        <div class="flex items-center">
+          <img src="./images/logo.png" alt="" />
+          <h2 class="font-bold text-4xl ml-4">Fruit Burst</h2>
+        </div>
+        <!-- search  -->
+        <div>
+          <input
+            class="relative rounded-full pl-4 py-2 pr-40 mr-4"
+            type="search"
+            placeholder="Search Here"
+          />
+          <i
+            class="absolute -ml-16 mt-2 fa-solid fa-magnifying-glass text-[#121212] text-lg"
+          ></i>
+        </div>
+      </nav>
+      <!-- nav - mobile -->
+      <nav-mobile class=" lg:hidden md:hidden">
+        <div class="py-4 flex justify-between items-center mx-4">
+          <div class="flex items-center">
+            <img src="./images/logo.png" alt="" />
+            <h3 class="font-bold text-3xl ml-4">Fruit Burst</h3>
+          </div>
+          <img class="w-10 h-7" src="./images/Frame.png" alt="" />
+        </div>
+      </nav-mobile>
+    </header>
+  </body>
 </html>
